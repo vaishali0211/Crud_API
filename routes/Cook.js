@@ -28,11 +28,6 @@ router.delete('/:id', (req, res) => {
   cookRoutes.deleteCook(req, res);
 });
 
-router.get('/api/cooks', cookRoutes.getAllCooks);
-router.post('/api/cooks', cookRoutes.createCook);
-router.get('/api/cooks/:id', cookRoutes.getOneCook);
-router.put('/api/cooks/:id', cookRoutes.updateCook);
-router.delete('/api/cooks/:id', cookRoutes.deleteCook);
 
 
 module.exports = router;
